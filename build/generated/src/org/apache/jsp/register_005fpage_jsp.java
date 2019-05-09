@@ -1,0 +1,273 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class register_005fpage_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html;charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<link href=\"//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css\" rel=\"stylesheet\" id=\"bootstrap-css\">\n");
+      out.write("    <script src=\"//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script>\n");
+      out.write("    <script src=\"//code.jquery.com/jquery-1.11.1.min.js\"></script>    \n");
+      out.write("    <!------ Include the above in your HEAD tag ---------->\n");
+      out.write("\n");
+      out.write("    <!DOCTYPE html>\n");
+      out.write("    <html lang=\"en\">\n");
+      out.write("        <head> \n");
+      out.write("            <style>\n");
+      out.write("                #playground-container {\n");
+      out.write("                    height: 500px;\n");
+      out.write("                    overflow: hidden !important;\n");
+      out.write("                    -webkit-overflow-scrolling: touch;\n");
+      out.write("                }\n");
+      out.write("                body, html{\n");
+      out.write("                    height: 100%;\n");
+      out.write("                    background-repeat: no-repeat;\n");
+      out.write("                    background:url(https://i.ytimg.com/vi/4kfXjatgeEU/maxresdefault.jpg);\n");
+      out.write("                    font-family: 'Oxygen', sans-serif;\n");
+      out.write("                    background-size: cover;\n");
+      out.write("                }\n");
+      out.write("\n");
+      out.write("                .main{\n");
+      out.write("                    margin:50px 15px;\n");
+      out.write("                }\n");
+      out.write("\n");
+      out.write("                h1.title { \n");
+      out.write("                    font-size: 50px;\n");
+      out.write("                    font-family: 'Passion One', cursive; \n");
+      out.write("                    font-weight: 400; \n");
+      out.write("                }\n");
+      out.write("\n");
+      out.write("                hr{\n");
+      out.write("                    width: 10%;\n");
+      out.write("                    color: #fff;\n");
+      out.write("                }\n");
+      out.write("\n");
+      out.write("                .form-group{\n");
+      out.write("                    margin-bottom: 15px;\n");
+      out.write("                }\n");
+      out.write("\n");
+      out.write("                label{\n");
+      out.write("                    margin-bottom: 15px;\n");
+      out.write("                }\n");
+      out.write("\n");
+      out.write("                input,\n");
+      out.write("                input::-webkit-input-placeholder {\n");
+      out.write("                    font-size: 11px;\n");
+      out.write("                    padding-top: 3px;\n");
+      out.write("                }\n");
+      out.write("\n");
+      out.write("                .main-login{\n");
+      out.write("                    background-color: #fff;\n");
+      out.write("                    /* shadows and rounded borders */\n");
+      out.write("                    -moz-border-radius: 2px;\n");
+      out.write("                    -webkit-border-radius: 2px;\n");
+      out.write("                    border-radius: 2px;\n");
+      out.write("                    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);\n");
+      out.write("                    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);\n");
+      out.write("                    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);\n");
+      out.write("\n");
+      out.write("                }\n");
+      out.write("                .form-control {\n");
+      out.write("                    height: auto!important;\n");
+      out.write("                    padding: 8px 12px !important;\n");
+      out.write("                }\n");
+      out.write("                .input-group {\n");
+      out.write("                    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;\n");
+      out.write("                    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;\n");
+      out.write("                    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;\n");
+      out.write("                }\n");
+      out.write("                #button {\n");
+      out.write("                    border: 1px solid #ccc;\n");
+      out.write("                    margin-top: 28px;\n");
+      out.write("                    padding: 6px 12px;\n");
+      out.write("                    color: #666;\n");
+      out.write("                    text-shadow: 0 1px #fff;\n");
+      out.write("                    cursor: pointer;\n");
+      out.write("                    -moz-border-radius: 3px 3px;\n");
+      out.write("                    -webkit-border-radius: 3px 3px;\n");
+      out.write("                    border-radius: 3px 3px;\n");
+      out.write("                    -moz-box-shadow: 0 1px #fff inset, 0 1px #ddd;\n");
+      out.write("                    -webkit-box-shadow: 0 1px #fff inset, 0 1px #ddd;\n");
+      out.write("                    box-shadow: 0 1px #fff inset, 0 1px #ddd;\n");
+      out.write("                    background: #f5f5f5;\n");
+      out.write("                    background: -moz-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);\n");
+      out.write("                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f5f5f5), color-stop(100%, #eeeeee));\n");
+      out.write("                    background: -webkit-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);\n");
+      out.write("                    background: -o-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);\n");
+      out.write("                    background: -ms-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);\n");
+      out.write("                    background: linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);\n");
+      out.write("                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#eeeeee', GradientType=0);\n");
+      out.write("                }\n");
+      out.write("                .main-center{\n");
+      out.write("                    margin-top: 30px;\n");
+      out.write("                    margin: 0 auto;\n");
+      out.write("                    max-width: 400px;\n");
+      out.write("                    padding: 10px 40px;\n");
+      out.write("                    background:#009edf;\n");
+      out.write("                    color: #FFF;\n");
+      out.write("                    text-shadow: none;\n");
+      out.write("                    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);\n");
+      out.write("                    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);\n");
+      out.write("                    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);\n");
+      out.write("\n");
+      out.write("                }\n");
+      out.write("                span.input-group-addon i {\n");
+      out.write("                    color: #009edf;\n");
+      out.write("                    font-size: 17px;\n");
+      out.write("                }\n");
+      out.write("\n");
+      out.write("                .login-button{\n");
+      out.write("                    margin-top: 5px;\n");
+      out.write("                }\n");
+      out.write("\n");
+      out.write("                .login-register{\n");
+      out.write("                    font-size: 11px;\n");
+      out.write("                    text-align: center;\n");
+      out.write("                }  \n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("            </style>\n");
+      out.write("\n");
+      out.write("            <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("            <!-- Website CSS style -->\n");
+      out.write("        <link href=\"css/bootstrap.min.css\" rel=\"stylesheet\">\n");
+      out.write("\n");
+      out.write("            <!-- Website Font style -->\n");
+      out.write("            <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css\">\n");
+      out.write("                <link rel=\"stylesheet\" href=\"style.css\">\n");
+      out.write("                    <!-- Google Fonts -->\n");
+      out.write("                    <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>\n");
+      out.write("                        <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>\n");
+      out.write("\n");
+      out.write("                            <title>Kayıt Ol</title>\n");
+      out.write("                            </head>\n");
+      out.write("                            <body>\n");
+      out.write("                            <div class=\"container\">\n");
+      out.write("                                <div class=\"row main\">\n");
+      out.write("                                    <div class=\"main-login main-center\">\n");
+      out.write("                                        <h5>Ücretsiz kayıt olun ve makalelerinizi yükleyin.</h5>\n");
+      out.write("                                        <form method=\"POST\" action=\"kullaniciEkle\">\n");
+      out.write("\n");
+      out.write("                                            <div class=\"form-group\">\n");
+      out.write("                                                <label for=\"name\" class=\"cols-sm-2 control-label\">Ad</label>\n");
+      out.write("                                                <div class=\"cols-sm-10\">\n");
+      out.write("                                                    <div class=\"input-group\">\n");
+      out.write("                                                        <span class=\"input-group-addon\"><i class=\"fa fa-user fa\" aria-hidden=\"true\"></i></span>\n");
+      out.write("                                                        <input type=\"text\" class=\"form-control\" name=\"name\" id=\"name\"  placeholder=\"Adınızı Girin\"/>\n");
+      out.write("                                                    </div>\n");
+      out.write("                                                </div>\n");
+      out.write("                                            </div>\n");
+      out.write("\n");
+      out.write("                                            <div class=\"form-group\">\n");
+      out.write("                                                <label for=\"email\" class=\"cols-sm-2 control-label\">E-Posta</label>\n");
+      out.write("                                                <div class=\"cols-sm-10\">\n");
+      out.write("                                                    <div class=\"input-group\">\n");
+      out.write("                                                        <span class=\"input-group-addon\"><i class=\"fa fa-envelope fa\" aria-hidden=\"true\"></i></span>\n");
+      out.write("                                                        <input type=\"text\" class=\"form-control\" name=\"email\" id=\"email\"  placeholder=\"E-Posta Adresinizi Girin\"/>\n");
+      out.write("                                                    </div>\n");
+      out.write("                                                </div>\n");
+      out.write("                                            </div>\n");
+      out.write("\n");
+      out.write("                                            <div class=\"form-group\">\n");
+      out.write("                                                <label for=\"username\" class=\"cols-sm-2 control-label\">Kullanıcı Adı</label>\n");
+      out.write("                                                <div class=\"cols-sm-10\">\n");
+      out.write("                                                    <div class=\"input-group\">\n");
+      out.write("                                                        <span class=\"input-group-addon\"><i class=\"fa fa-users fa\" aria-hidden=\"true\"></i></span>\n");
+      out.write("                                                        <input type=\"text\" class=\"form-control\" name=\"username\" id=\"username\"  placeholder=\"Kullanıcı Adınızı Girin\"/>\n");
+      out.write("                                                    </div>\n");
+      out.write("                                                </div>\n");
+      out.write("                                            </div>\n");
+      out.write("\n");
+      out.write("                                            <div class=\"form-group\">\n");
+      out.write("                                                <label for=\"password\" class=\"cols-sm-2 control-label\">Şifre</label>\n");
+      out.write("                                                <div class=\"cols-sm-10\">\n");
+      out.write("                                                    <div class=\"input-group\">\n");
+      out.write("                                                        <span class=\"input-group-addon\"><i class=\"fa fa-lock fa-lg\" aria-hidden=\"true\"></i></span>\n");
+      out.write("                                                        <input type=\"password\" class=\"form-control\" name=\"password\" id=\"password\"  placeholder=\"Şifrenizi Girin\"/>\n");
+      out.write("                                                    </div>\n");
+      out.write("                                                </div>\n");
+      out.write("                                            </div>\n");
+      out.write("\n");
+      out.write("                                            <div class=\"form-group\">\n");
+      out.write("                                                <label for=\"confirm\" class=\"cols-sm-2 control-label\">Şifre Tekrar</label>\n");
+      out.write("                                                <div class=\"cols-sm-10\">\n");
+      out.write("                                                    <div class=\"input-group\">\n");
+      out.write("                                                        <span class=\"input-group-addon\"><i class=\"fa fa-lock fa-lg\" aria-hidden=\"true\"></i></span>\n");
+      out.write("                                                        <input type=\"password\" class=\"form-control\" name=\"confirm\" id=\"confirm\"  placeholder=\"Şifrenizi Tekrar Girin\"/>\n");
+      out.write("                                                    </div>\n");
+      out.write("                                                </div>\n");
+      out.write("                                            </div>\n");
+      out.write("\n");
+      out.write("                                            <div class=\"form-group \">\n");
+      out.write("                                                <input type=\"submit\" id=\"button\" class=\"btn btn-primary btn-lg btn-block login-button\" value=\"Kayıt Ol\"/>\n");
+      out.write("                                            </div>\n");
+      out.write("\n");
+      out.write("                                        </form>\n");
+      out.write("                                    </div>\n");
+      out.write("                                </div>\n");
+      out.write("                            </div>\n");
+      out.write("\n");
+      out.write("                            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n");
+      out.write("                            <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js\"></script>\n");
+      out.write("                            <!-- Include all compiled plugins (below), or include individual files as needed -->\n");
+      out.write("                            <script src=\"js/bootstrap.min.js\"></script>\n");
+      out.write("                            </body>\n");
+      out.write("                            </html>\n");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}

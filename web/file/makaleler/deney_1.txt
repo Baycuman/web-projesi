@@ -1,0 +1,48 @@
+
+
+#include <p16f877a.inc>
+deg1 equ 0x021
+deg2 equ 0x022
+SONUCH equ 0x023
+SONUCL equ 0x024
+org 0x000
+init 
+BANKSEL TRISB 
+CLRF TRISB
+BANKSEL PORTB
+CLRF PORTB
+BANKSEL ADCON1
+MOVLW H'06'
+MOVWF ADCON1
+BANKSEL TRISA 
+MOVLW 0XFF
+MOVWF TRISA
+BANKSEL PORTA
+CLRF PORTA
+movlw d'40'
+movwf deg1
+movlw d'10'
+movwf deg2
+CLRF SONUCL
+CLRF SONUCH
+carp
+movf deg1,w
+addwf SONUCL,F
+btfsc STATUS,C
+incf SONUCH,F
+BCF STATUS,C
+DECFSZ deg2,F
+GOTO carp
+goto yaz
+yaz
+BTFSS PORTA,0
+goto sonuc_l
+movf SONUCH,w
+movwf PORTB
+goto yaz
+sonuc_l
+movf SONUCL,w
+movwf PORTB
+goto yaz
+
+end
